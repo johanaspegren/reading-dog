@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-reading {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.text-reading p {
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  padding: 0 1rem;
+}
+
+.text-reading p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .text-reading {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
